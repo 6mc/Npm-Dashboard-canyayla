@@ -1,0 +1,18 @@
+<html>
+<head>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+   <script>
+      function uygula() {
+         metin = $('input[name="metin"]').val();
+         $.post('/api/insert', {url: metin}, function (gelen_cevap) {
+            $('.cevap').html(gelen_cevap);
+         });
+      }
+   </script>
+</head>
+<body>
+   <div class="cevap"></div>
+   <input type="text" name="metin" /><br/>
+   <input type="button" value="Gönder" onclick="uygula()" />
+</body>
+</html>
