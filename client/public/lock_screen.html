@@ -36,8 +36,8 @@
 	  		<div id="showtime"></div>
 	  			<div class="col-lg-4 col-lg-offset-4">
 	  				<div class="lock-screen">
-		  				<h2><a data-toggle="modal" href="#myModal"><i class="fa fa-lock"></i></a></h2>
-		  				<p>UNLOCK</p>
+		  				<h2><a data-toggle="modal" href="#myModal"><i class="fa fa-play"></i></a></h2>
+		  				<p>START BOT</p>
 		  				
 				          <!-- Modal -->
 				          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
@@ -45,24 +45,25 @@
 				                  <div class="modal-content">
 				                      <div class="modal-header">
 				                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				                          <h4 class="modal-title">Welcome Back</h4>
+				                          <h4 class="modal-title">Paste url or Enter a Keyword</h4>
 				                      </div>
 				                      <div class="modal-body">
+                                      <form action="/START" method="Post">
 				                          <p class="centered"><img class="img-circle" width="80" src="assets/img/ui-sam.jpg"></p>
-				                          <input type="password" name="password" placeholder="Password" autocomplete="off" class="form-control placeholder-no-fix">
-				
+				                          <input type="text" name="message" placeholder="E.g. Game of Thrones Season 7 episode 1" autocomplete="off" class="form-control placeholder-no-fix">
+				<input type="text" style="display: none;" name="user" value="user" placeholder="E.g. Game of Thrones Season 7 episode 1" autocomplete="off" class="form-control placeholder-no-fix">
 				                      </div>
 				                      <div class="modal-footer centered">
 				                          <button data-dismiss="modal" class="btn btn-theme04" type="button">Cancel</button>
-				                          <button class="btn btn-theme03" type="button">Login</button>
-				                      </div>
+				                          <input type="submit" name="asd" class="btn btn-theme03" type="button"></input>
+				                      </div></form>
 				                  </div>
 				              </div>
 				          </div>
 				          <!-- modal -->
 		  				
 		  				
-	  				</div><! --/lock-screen -->
+	  				</div>
 	  			</div><!-- /col-lg-4 -->
 	  	
 	  	</div><!-- /container -->

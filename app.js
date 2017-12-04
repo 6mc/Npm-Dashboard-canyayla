@@ -30,6 +30,8 @@ app.use(bodyParser.urlencoded({ extended: true })); // 폼 데이터 입력을 �
 app.use(bodyParser.json()); // 폼 데이터 입력을 받기 위한 사용 설정
 
 var router = require('./routes')(app, Users); // 라우트 기능
+//var router = require('./routes')(app, Ticket);
+
 
 var port = 8080;
 var server = app.listen(port, function(){

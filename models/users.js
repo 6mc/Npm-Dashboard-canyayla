@@ -6,7 +6,11 @@ var contentSchema = new Schema({ // contentSchema 생성
     username: String,
     email: String,
     password: String,
-    type: String   
+    type: String,   
+     message: String,
+    response: String,
+    user:String,
+    Comment: String 
 }, { versionKey: false });
 
 module.exports = mongoose.model('users', contentSchema); // contentSchema 명칭을 content 로 정의 후 export

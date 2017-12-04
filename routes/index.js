@@ -164,7 +164,7 @@ return apex[0];
 
 
 
-function create(url){
+function create(name,username,email,type){
 
 
 
@@ -210,7 +210,7 @@ var sb = "<!DOCTYPE html>" +
 "                  <div class='fa fa-bars tooltips' data-placement='right' data-original-title='Toggle Navigation'></div>" +
 "              </div>" +
 "            <!--logo start-->" +
-"            <a href='index.html' class='logo'><b>Rexivo FREE</b></a>" +
+"            <a href='index.html' class='logo'><b>Rexivo  <span style='color:#3DCD58'>"+type +"</span> </b></a>" +
 "            <!--logo end-->" +
 "            <div class='nav notify-row' id='top_menu'>" +
 "                <!--  notification start -->" +
@@ -912,7 +912,7 @@ return sb;
 
 
 
-app.post('/login',function(req, res){
+app.post('/dashboard',function(req, res){
 
 Content.find({username:req.body.username,password:req.body.password}, function(err, contents){
 if(err) return res.status(500).send({err: 'database failure'});
@@ -925,13 +925,20 @@ if (contents.length==0)
    {
 
 
+//res.send(contents[0]['type']);
 
-    
+var type = contents[0]['type'];
+var uname = contents[0]['username'];
+var name = contents[0]['name'];
+var email = contents[0]['email'];
 
 
+if (type=="admin") {
 
-res.send(create(contents));
-
+ res.render('./../client/public/admin.html');
+}
+else
+res.send(create(name,uname,email,type));
     //res.redirect('/dashboard/')
    }
 
@@ -985,7 +992,17 @@ else
     // });
   });
 
+
   // 데이터 생성
+ app.post('/api/update', function(req,res){
+
+Content.update({message:req.body.message},{$set: {response:req.body.response}});
+
+res.send("secca");
+
+});
+
+ 
   app.post('/api/insert', function(req, res){ //
     var user = new Content();
     // console.log("req.body.name : ",req.body.name);
@@ -1003,6 +1020,11 @@ else
               return;
           }
       });
+
+
+
+
+
       // res.send('input success');
     //  res.redirect('/admin');
 
@@ -1024,6 +1046,32 @@ else
       // res.json({result: "success"});
   });
 
+
+
+
+
+app.post('/Start', function(req, res){ //
+    var ticket = new Content();
+    // console.log("req.body.name : ",req.body.name);
+     // ticket.response = "req.body.response;"
+      ticket.user = req.body.user;
+      ticket.message = req.body.message;
+  //    ticket.Comment = "req.body.Comment;"
+    //  user.type = req.body.type;
+      
+
+      ticket.save(function(err){
+          if(err){
+              console.error(err);
+              res.json({result: "error"});
+              return;
+          }
+      });
+      
+res.send("suces");
+
+
+      });
 
   // 데이터 수정
   // app.put('/api/contents/:name', function(req, res){
