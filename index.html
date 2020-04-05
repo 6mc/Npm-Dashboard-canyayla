@@ -1,43 +1,550 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Comment it</title>
-</head>
-<body>
-Paste Your Link 
-<input type="text" name="url" id="link" style=" width: 300px; ">
- <input type="submit" value="Submit" onclick="trigger()">
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Restaurant Theme By Themefisher</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.68.3" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="http://example.org/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="http://example.org/css/slick.css">
+  
+  <link rel="stylesheet" href="http://example.org/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="http://example.org/css/animate.min.css">
+  
+  <link rel="stylesheet" href="http://example.org/css/venobox.css">
+  
+  <link rel="stylesheet" href="http://example.org/css/main.css">
+  
+  <link rel="stylesheet" href="http://example.org/css/responsive.css">
+  
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="http://example.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="http://example.org/images/favicon.png" type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
 
 
- <script type="text/javascript">
-function trigger()
-{
-
-var url = document.getElementById('link').value;
-
-if (url.search("www")==-1) 
-{
-
-var fixed = url.split("//");
-
-}
-else
-var fixed = url.split("www.");
-
-if (fixed[1]!=null) 
-alert(fixed[1]);
-else
-	alert(fixed[0]);
+<!-- header-img start  -->
 
 
-}
+<section id="hero-area"  class="overlay" >
+  <img class="img-responsive" src="http://example.org/images/headers.jpg">
+</section>
+
+<!-- Navigation Start  -->
+
+<nav class="navigation">
+	<div class="container">
+		<div class="block">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- logo -->
+						<a class="navbar-brand" href="http://example.org/">
+							<img class="img-responsive" src="http://example.org/images/logoson.png" alt="Restaurant Theme By Themefisher">
+						</a>
+						<!-- logo -->
+					</div>
+
+					
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right" id="top-nav">
+							
+							<li><a href="#hero-area">Anasayfa</a></li>
+							
+							<li><a href="#about-us">Hakkımızda</a></li>
+							
+							<li><a href="#price">Ürünler</a></li>
+							
+							<li><a href="#subscribe">Bize Ulaşın</a></li>
+							
+							<li><a href="#contact-us">ILETISIM</a></li>
+							
+						</ul>
+					</div>
+					
+				</div>
+			</nav>
+		</div>
+	</div>
+</nav>
+
+<section id="slider">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+					<div class="title">
+						<h3>FEATURED WORKS</h3>
+					</div>
+					<div class="gallery-slider">
+						
+						<a href="http://example.org/images/1.jpg" class="venobox" data-gall="sliderGallery"><img class="img-responsive"
+								src="http://example.org/images/1.jpg" alt=""></a>
+						
+						<a href="http://example.org/images/2.jpg" class="venobox" data-gall="sliderGallery"><img class="img-responsive"
+								src="http://example.org/images/2.jpg" alt=""></a>
+						
+						<a href="http://example.org/images/3.jpg" class="venobox" data-gall="sliderGallery"><img class="img-responsive"
+								src="http://example.org/images/3.jpg" alt=""></a>
+						
+						<a href="http://example.org/images/4.jpg" class="venobox" data-gall="sliderGallery"><img class="img-responsive"
+								src="http://example.org/images/4.jpg" alt=""></a>
+						
+						<a href="http://example.org/images/5.jpg" class="venobox" data-gall="sliderGallery"><img class="img-responsive"
+								src="http://example.org/images/5.jpg" alt=""></a>
+						
+						<a href="http://example.org/images/6.jpg" class="venobox" data-gall="sliderGallery"><img class="img-responsive"
+								src="http://example.org/images/6.jpg" alt=""></a>
+						
+						<a href="http://example.org/images/7.jpg" class="venobox" data-gall="sliderGallery"><img class="img-responsive"
+								src="http://example.org/images/7.jpg" alt=""></a>
+						
+						<a href="http://example.org/images/8.jpg" class="venobox" data-gall="sliderGallery"><img class="img-responsive"
+								src="http://example.org/images/8.jpg" alt=""></a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 
 
 
+<section id="about-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <img class="img-responsive mx-auto" src="http://example.org/images/canyayla1.png" alt="Hakkımızda" />
+          <h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">Hakkımızda
+          </h1>
+          <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">CAN YAYLA Et ve Et Ürünleri, Serinhisar’da doğal bitkiler ve kekikle beslenen süt dana ve kuzularından elde edilen mamüllerinin üretim ve pazarlaması konularında faaliyet göstermektedir. Can Yayla Et ve Et Ürünlerinde temel üretim prensibi “Yemeyeceğimiz Eti Satmıyoruz” olup yıllardır bu kalite anlayışıyla faaliyetler sürdürülmektedir. Çevre yerleşim birimlerinde haklı bir ün’e sahip Serinhisar Hayvancılığı, bu ününü dağlarında yetişen doğal bitkiler ve kekikle beslenen büyük ve küçükbaş hayvanların etinin lezzetinden almaktadır. Et ve Et Ürünlerimiz, satış mağazamız ve mezbahamızla yıllardır sürdürdüğümüz üretimimiz ISO 22000 ve ISO 9001 belgeleriyle tescillidir. Üretimimiz uzman veteriner hekimler kontrolünde yapılmaktadır. Ürünlerimiz veya hizmetlerimiz ile ilgili her türlü sorunuz veya talebiniz için bize aşağıdaki iletişim adreslerinden ulaşabilirsiniz</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
- </script>
 
+
+
+<section id="blog"  class="overlay" 
+	style="background-image: url('http://example.org/images/bgimage.png');">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<h1 class="heading">Favori Ürünlerimiz</h1>
+					<ul>
+						
+						
+						<li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
+							<div class="blog-img">
+								<img src="http://example.org/images/jefferson.png" alt="post-image" class="img-responsive">
+							</div>
+							<div class="content-right">
+								<h3><a href="http://example.org/red-pepper-miso-wings-2/">Biftek</a></h3>
+								<p>Dana etinden elde edilmiş.</p>
+							</div>
+						</li>
+						
+						<li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
+							<div class="blog-img">
+								<img src="http://example.org/images/k%C4%B1yma.png" alt="post-image" class="img-responsive">
+							</div>
+							<div class="content-right">
+								<h3><a href="http://example.org/red-pepper-miso-wings/">Kıyma</a></h3>
+								<p>Yemeklerde kullanım için ideal.</p>
+							</div>
+						</li>
+						
+						<li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
+							<div class="blog-img">
+								<img src="http://example.org/images/danakaburga.png" alt="post-image" class="img-responsive">
+							</div>
+							<div class="content-right">
+								<h3><a href="http://example.org/homestyle-chicken-pot-pie/">Dana Kaburga</a></h3>
+								<p>Dana etinin en lezzetli yeri.</p>
+							</div>
+						</li>
+						
+						<li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
+							<div class="blog-img">
+								<img src="http://example.org/images/yov.png" alt="post-image" class="img-responsive">
+							</div>
+							<div class="content-right">
+								<h3><a href="http://example.org/my-first-post/">Kuşbaşı</a></h3>
+								<p>Sofraların vazgeçilmezi.</p>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			
+
+
+		</div>
+	</div>
+</section>
+
+
+
+
+<section id="price">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<h1 class="heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+						Ürünlerimiz</h1>
+					<p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+						Perakende Satış Mağazamızda aşağıdaki ürünleri bulabilirsiniz</p>
+					<div class="pricing-list">
+						<div class="title">
+							<h3>En çok ilgi görenler</h3>
+						</div>
+						<ul>
+							
+							<li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+								<div class="item">
+									<div class="item-title">
+										<h2>Dana Sucuk</h2>
+										<div class="border-bottom"></div>
+										<span></span>
+									</div>
+									<p>Dana Etinden elde edilmiş. Isıl işlem görmemiş. Katkı maddesi içermeyen. %100 dogal fermente sucuk.</p>
+								</div>
+							</li>
+							
+							<li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+								<div class="item">
+									<div class="item-title">
+										<h2>Köfte</h2>
+										<div class="border-bottom"></div>
+										<span></span>
+									</div>
+									<p>Pişirilmeye hazır. Tamamen doğal.</p>
+								</div>
+							</li>
+							
+							<li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+								<div class="item">
+									<div class="item-title">
+										<h2>Kömür</h2>
+										<div class="border-bottom"></div>
+										<span></span>
+									</div>
+									<p>Barbekü veya Mangal.</p>
+								</div>
+							</li>
+							
+							<li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+								<div class="item">
+									<div class="item-title">
+										<h2>Köfte Harcı</h2>
+										<div class="border-bottom"></div>
+										<span></span>
+									</div>
+									<p>Köftelerin olmazsa olmazı</p>
+								</div>
+							</li>
+							
+							<li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+								<div class="item">
+									<div class="item-title">
+										<h2>Yatagan Bıçakları</h2>
+										<div class="border-bottom"></div>
+										<span></span>
+									</div>
+									<p>Meşhur Yatagan Bıçakları, Zırh ve Satır çeşitlerimiz de mevcuttur.</p>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<section id="subscribe"  class="overlay" 
+  style="background-image: url('http://example.org/images/headers.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1 class=" heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">E-posta Bültenimize Abone Olun
+          </h1>
+          <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">Yeni Ürünlerimiz hakkında haberdar olmak için e-posta Bültenimize abone olabilirsiniz.</p>
+          <div class="subscription-form">
+            
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+              #mc_embed_signup {
+                background: #fff;
+                clear: left;
+                font: 14px Helvetica, Arial, sans-serif;
+              }
+
+               
+            </style>
+            <div id="mc_embed_signup">
+              <form action="https://themefisher.us9.list-manage.com/subscribe/post?u=f95ece2732a6e9925f2e70a61&amp;amp;id=b1e227529e" method="post" id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                  <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email Address</label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                  </div>
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>
+                  
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                      name="b_f95ece2732a6e9925f2e70a61_b1e227529e" tabindex="-1" value=""></div>
+                </div>
+              </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+            <script type='text/javascript'>
+              (function ($) {
+                window.fnames = new Array();
+                window.ftypes = new Array();
+                fnames[0] = 'EMAIL';
+                ftypes[0] = 'email';
+                fnames[1] = 'FNAME';
+                ftypes[1] = 'text';
+                fnames[2] = 'LNAME';
+                ftypes[2] = 'text';
+                fnames[3] = 'ADDRESS';
+                ftypes[3] = 'address';
+                fnames[4] = 'PHONE';
+                ftypes[4] = 'phone';
+              }(jQuery));
+              var $mcj = jQuery.noConflict(true);
+            </script>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="contact-us">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<h1 class=" heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms"><!-- raw HTML omitted --> Bize Ulaşın <!-- raw HTML omitted --></h1>
+					<h3 class="title wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">E-posta ile ulaşın</h3>
+					<form action="#" method="POST">
+						<div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+							<input type="email" name="email" class="form-control" placeholder="Write your email address here...">
+						</div>
+						<div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="800ms">
+							<input type="text" name="name" class="form-control" placeholder="Write your full name here...">
+						</div>
+						<div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1000ms">
+							<textarea class="form-control" rows="3" name="message" placeholder="Write your message here..."></textarea>
+						</div>
+						<button type="submit" value="send" class="btn btn-default wow bounceIn" data-wow-duration="500ms" data-wow-delay="1300ms"
+						role="button">send your message</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<section id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="block wow fadeInLeft" data-wow-delay="200ms">
+					<h3> ILETISIM </h3>
+					<div class="info">
+						<ul>
+							
+							<li>
+								<h4><i class="fa fa-phone"></i>Telefon</h4>
+								<p>0 532 558 28 14</p>
+							</li>
+							
+							<li>
+								<h4><i class="fa fa-map-marker"></i>Adres</h4>
+								<p>Cumhuriyet Mahallesi Atatürk Bulvarı No:129/1 Serinhisar/Denizli (Denizli-Antalya yolu üzeri)</p>
+							</li>
+							
+							<li>
+								<h4><i class="fa fa-envelope"></i>E posta</h4>
+								<p><a href="mailto:canyaylakasabi@gmail.com">canyaylakasabi@gmail.com</a></p>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="block wow fadeInLeft" data-wow-delay="700ms">
+					<h3> SON URUNLERIMIZ </h3>
+					<div class="blog">
+						<ul>
+							
+							<!-- post -->
+							<li>
+								<h4><a href="http://example.org/red-pepper-miso-wings-2/">Biftek</a></h4>
+								<p>26 Dec 2018</p>
+							</li>
+							
+							<!-- post -->
+							<li>
+								<h4><a href="http://example.org/red-pepper-miso-wings/">Kıyma</a></h4>
+								<p>26 Dec 2018</p>
+							</li>
+							
+							<!-- post -->
+							<li>
+								<h4><a href="http://example.org/homestyle-chicken-pot-pie/">Dana Kaburga</a></h4>
+								<p>26 Dec 2018</p>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="block wow fadeInLeft" data-wow-delay="1100ms">
+					<div class="gallary">
+						<h3> FOTOGRAFLAR </h3>
+						<ul class="gallery">
+							
+							<li><a href="http://example.org/images/11.jpg" class="venobox" data-gall="footerGallery"><img class="img-responsive"
+										src="http://example.org/images/11.jpg" alt=""></a></li>
+							
+							<li><a href="http://example.org/images/12.jpg" class="venobox" data-gall="footerGallery"><img class="img-responsive"
+										src="http://example.org/images/12.jpg" alt=""></a></li>
+							
+							<li><a href="http://example.org/images/13.jpg" class="venobox" data-gall="footerGallery"><img class="img-responsive"
+										src="http://example.org/images/13.jpg" alt=""></a></li>
+							
+							<li><a href="http://example.org/images/14.jpg" class="venobox" data-gall="footerGallery"><img class="img-responsive"
+										src="http://example.org/images/14.jpg" alt=""></a></li>
+							
+							<li><a href="http://example.org/images/11.jpg" class="venobox" data-gall="footerGallery"><img class="img-responsive"
+										src="http://example.org/images/11.jpg" alt=""></a></li>
+							
+							<li><a href="http://example.org/images/12.jpg" class="venobox" data-gall="footerGallery"><img class="img-responsive"
+										src="http://example.org/images/12.jpg" alt=""></a></li>
+							
+						</ul>
+					</div>
+					<div class="social-media-link">
+						<h3> Sosyal <span>MEDYA</span> </h3>
+						<ul>
+							
+							<li><a href="https://www.facebook.com/canyaylaet"><i class="fa fa-facebook"></i></a></li>
+							
+							<li><a href="mailto:canyaylakasabi@gmail.com"><i class="fa fa-envelope"></i></a></li>
+							
+							<li><a href="tel:05325582814"><i class="fa fa-phone"></i></a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+<footer id="footer-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="block">
+					<p>Copyright 2020 - All Rights Reserved. Design and Developed By Themefisher.com &amp;&amp; Deployed by Mehmet.cn<!-- raw HTML omitted --></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- JS Plugins -->
+
+<script src="http://example.org/js/jquery.min.js"></script>
+
+<script src="http://example.org/js/bootstrap.min.js"></script>
+
+<script src="http://example.org/js/slick.min.js"></script>
+
+<script src="http://example.org/js/wow.min.js"></script>
+
+<script src="http://example.org/js/venobox.min.js"></script>
+
+<script src="http://example.org/js/main.js"></script>
+
+
+<!-- google analitycs -->
+
+<script>
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+	ga('create', 'Your ID', 'auto');
+	ga('send', 'pageview');
+</script>
 </body>
 </html>

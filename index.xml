@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Restaurant Theme By Themefisher</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Restaurant Theme By Themefisher</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Dec 2018 12:30:01 +0600</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Biftek</title>
+      <link>http://example.org/red-pepper-miso-wings-2/</link>
+      <pubDate>Wed, 26 Dec 2018 12:30:01 +0600</pubDate>
+      
+      <guid>http://example.org/red-pepper-miso-wings-2/</guid>
+      <description>Dana etinden elde edilmiş.</description>
+    </item>
+    
+    <item>
+      <title>Kıyma</title>
+      <link>http://example.org/red-pepper-miso-wings/</link>
+      <pubDate>Wed, 26 Dec 2018 12:28:47 +0600</pubDate>
+      
+      <guid>http://example.org/red-pepper-miso-wings/</guid>
+      <description>Yemeklerde kullanım için ideal.</description>
+    </item>
+    
+    <item>
+      <title>Dana Kaburga</title>
+      <link>http://example.org/homestyle-chicken-pot-pie/</link>
+      <pubDate>Wed, 26 Dec 2018 12:23:10 +0600</pubDate>
+      
+      <guid>http://example.org/homestyle-chicken-pot-pie/</guid>
+      <description>Dana etinin en lezzetli yeri.</description>
+    </item>
+    
+    <item>
+      <title>Kuşbaşı</title>
+      <link>http://example.org/my-first-post/</link>
+      <pubDate>Wed, 12 Dec 2018 04:28:21 +0600</pubDate>
+      
+      <guid>http://example.org/my-first-post/</guid>
+      <description>Sofraların vazgeçilmezi.</description>
+    </item>
+    
+  </channel>
+</rss>
